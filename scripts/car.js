@@ -1,17 +1,17 @@
 class Car {
-  static ACCELERATION = 0.2;
+  static ACCELERATION = 0.5;
 
   constructor({ x, y, width, height }) {
     this.x = x;
     this.y = y;
     this.width = width;
     this.height = height;
-    this.maxSpeed = 5;
+    this.maxSpeed = 10;
     this.acceleration = Car.ACCELERATION;
     this.reverseAcceleration = Car.ACCELERATION / 2;
     this._speed = 0;
-    this.friction = 0.06;
-    this.breakingFriction = Car.ACCELERATION / 4;
+    this.friction = 0.1;
+    this.breakingFriction = Car.ACCELERATION / 1.5;
     this.controls = new Controls();
     this.angle = Math.PI * 1.5;
   }
